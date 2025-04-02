@@ -17,7 +17,7 @@ seconds_to_microseconds_conversion_number = 1000000
 sonar_delays = [2 / seconds_to_microseconds_conversion_number, 10 / seconds_to_microseconds_conversion_number]
 delay_between_sonar_cheeks = 10
 distance = 0
-too_close = 20
+TOO_CLOSE = 20
 
 # setup
 led = digitalio.DigitalInOut(board.GP12)
@@ -40,7 +40,7 @@ while True:
     print(f"Distance: {distance} cm")
 
     # Turns on LED if an object’s distance is equal to or closer then 20 cm from the sonar
-    if distance <= too_close0:
+    if distance < TOO_CLOSE:
         for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
             my_servo.angle = angle
             time.sleep(blink_delay)
