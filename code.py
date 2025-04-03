@@ -41,10 +41,12 @@ while True:
     # Turns on LED if an object’s distance is equal to or closer then 20 cm from the sonar
     if distance < TOO_CLOSE:
         for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
-            my_servo.angle = angle   
+            my_servo.angle = angle
+            time.sleep(servo_delay)
     else:
         for angle in range(180, 0, -5): # 180 - 0 degrees, 5 degrees at a time.
             my_servo.angle = angle
+            time.sleep(servo_delay)
 
     # The commented out code is not part of the actual code but is needed to get it working by uncommenting it and then recommenting it
     #time.sleep(delay_between_sonar_cheeks)
