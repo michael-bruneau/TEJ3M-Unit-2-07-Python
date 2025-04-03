@@ -47,6 +47,3 @@ while True:
         for angle in range(180, 0, -5): # 180 - 0 degrees, 5 degrees at a time.
             my_servo.angle = angle
             time.sleep(servo_delay)
-
-    # The commented out code is not part of the actual code but is needed to get it working by uncommenting it and then recommenting it
-    #time.sleep(delay_between_sonar_cheeks)
