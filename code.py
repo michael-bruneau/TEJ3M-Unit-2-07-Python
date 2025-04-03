@@ -17,7 +17,7 @@ seconds_to_microseconds_conversion_number = 1000000
 sonar_delays = [2 / seconds_to_microseconds_conversion_number, 10 / seconds_to_microseconds_conversion_number]
 delay_between_sonar_cheeks = 10
 distance = 0
-servo_delay = 0.05
+servo_delay = 0.5
 TOO_CLOSE = 50
 
 # setup
@@ -36,7 +36,7 @@ while True:
     distance = sonar.distance
     time.sleep(sonar_delays[1])
 
-    print(f"Distance: {distance} cm")
+    #print(f"Distance: {distance} cm")
 
     # Turns on LED if an object’s distance is equal to or closer then 20 cm from the sonar
     if distance < TOO_CLOSE:
