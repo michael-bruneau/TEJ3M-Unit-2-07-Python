@@ -20,8 +20,6 @@ distance = 0
 TOO_CLOSE = 20
 
 # setup
-led = digitalio.DigitalInOut(board.GP12)
-led.direction = digitalio.Direction.OUTPUT
 sonar = adafruit_hcsr04.HCSR04(trigger_pin = board.GP15, echo_pin = board.GP14)
 
 # create a PWMOut object on Pin GP12.
