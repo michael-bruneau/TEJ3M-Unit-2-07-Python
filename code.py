@@ -36,8 +36,6 @@ while True:
     distance = sonar.distance
     time.sleep(sonar_delays[1])
 
-    #print(f"Distance: {distance} cm")
-
     # Turns on LED if an object’s distance is equal to or closer then 20 cm from the sonar
     if distance < TOO_CLOSE:
         for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
