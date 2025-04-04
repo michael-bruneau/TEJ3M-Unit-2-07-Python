@@ -1,7 +1,7 @@
 # Created by: Michael Bruneau
 # Created on: April 2025
 #
-# This module is a Raspberry Pi Pico program that displays distance from sonar and turns the Micro sevro if an object gets within 50cm close to the sonar
+# This module is a Raspberry Pi Pico program that turns Micro Servo if an object gets within 50cm the Ultrasonic Distance Sensor of the sonar
 
 
 import time
